@@ -1,13 +1,3 @@
-//IT21261046 - Perera W.M.M.S.D.S
-
-#include<iostream>
-#include<cstring>
-#include"Payment.h"
-#include"Order.h"
-using namespace std;
-
-
-
 HelakuruPay::HelakuruPay(){
 	//default constructor
 }
