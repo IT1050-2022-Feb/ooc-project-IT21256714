@@ -21,6 +21,9 @@ int main()
 
     delete tc;
 
+  
+  
+
 
   
   //IT21258312
@@ -71,5 +74,48 @@ int main()
   delete theatre;
   delete policy;
   delete admin;
+
+
+  //IT21261046
+  Payment *p = new Payment(5,2000);
+	
+	Card *c = new Card(1,3000,1234,"Sandaru","10-20-22");
+	c->DisplayCardDetails();
+	cout<<endl;
+	
+	Payoneer *pa = new Payoneer(2,4000,2345,"Sandaru@gmail.com");
+	pa->DisplayPayoneerDetails();
+	cout<<endl;
+	
+	HelakuruPay *H = new HelakuruPay(4,5000, 32123, "Dewmith");
+	H->DisplayHelaDetails();
+
+  delete p;
+  delete c;
+  delete pa;
+  delete H;
+
+  
+  //IT21261664
+
+  class Customer;
+  class Ticket;
+
+  
+  Customer *C[2];
+  C[0] = new Customer("C1","Kamal","Kelaniya","123456789v","kamal@gmail.com","Kamal123");
+  C[1] = new Customer("C2","Sunil","Malabe","839292929v","Sunil@gmail.com","Sunil123");
+
+  Ticket *T[2];
+  T[0] = new Ticket("001","Type1",C[0]);
+  T[1] = new Ticket("002", "Type2", C[1]);
+
+  Books booking1(C[0],T[0],"001","C1");
+  Books booking2(C[1],T[0], "002", "C2");
+
+  delete C[0];
+  delete C[1];
+  delete T[0];
+  delete T[1];
 
 }
