@@ -2,7 +2,7 @@
 class Order
 {
 
-protected:
+protected:      
     int OrderID;
     char seatType[10];
     int noOfSeats;
