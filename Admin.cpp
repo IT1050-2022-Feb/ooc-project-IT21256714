@@ -1,4 +1,4 @@
-//IT21260988 - Randeniya R. A. D. S. E
+//IT21260988 
 
 #include "Admin.h"
 #include <cstring>
