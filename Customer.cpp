@@ -1,4 +1,4 @@
-//IT21261664 - Dias M.A.S.S.A
+//IT21261664
 #include "Customer.h"
 #include "User.h"
 #include "Ticket.h"
