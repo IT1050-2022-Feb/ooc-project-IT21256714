@@ -1,4 +1,4 @@
-//IT21261046 Perera W.M.M.S.D.S
+//IT21261046 
 
 #include<iostream>
 #include<cstring>
